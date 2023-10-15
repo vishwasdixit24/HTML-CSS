@@ -1,0 +1,529 @@
+/*--------------*/
+/*BASIC COMPONENTS*/
+/*-----------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: white;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix{zoom: 1}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    
+}
+         
+
+
+/*-----------*/
+/*REUSABLE COMPONENTS*/
+/*-----------*/
+
+.row{
+    max-width: 1140;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+section{
+    padding: 80px 0;
+    
+}
+
+.box{
+    padding: 1%;
+    
+}
+
+/*-----------*/
+/*HEADINGS*/
+/*-----------*/
+
+h1,
+h2,
+h3 {
+    
+    font-weight: 300;
+    text-transform: uppercase;
+    
+    
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 240%; 
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+    
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: purple;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*-----------*/
+/*PARAGRAPHS*/
+/*-----------*/
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+    
+}
+
+/*-----------*/
+/*ICONS*/
+/*-----------*/
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: purple;
+    margin-bottom: 10%;
+}
+
+
+/*-----------*/
+/*BUTTONS*/
+/*-----------*/
+
+.btn:link, 
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: aqua;
+    -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    
+    background-color: black;
+    border: 1px solid purple;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid purple;
+    
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: purple;
+    
+}
+
+.btn-full:hover,
+.btn-full:active{
+      border: 1px solid purple;
+}
+
+/*-----------*/
+/*HEADER*/
+/*-----------*/
+
+header{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),url(https://wallpapercave.com/wp/wp4180128.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://wallpapercave.com/wp/wp4180128.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid purple;
+    
+}
+
+/*-----------*/
+/*FEATURES*/
+/*-----------*/
+
+.section-features .long-copy{
+    margin-bottom: 10px;
+    
+}
+
+/*-----------*/
+/*MEALS*/
+/*-----------*/
+
+.section-meals{
+    padding: 0;
+    
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+    
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+    
+    
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: 300px;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.2s;
+    transition: opacity 0.5s, -webkit-transform 0.2s;
+    transition: transform 0.2s, opacity 0.5s;
+    transition: transform 0.2s, opacity 0.5s, -webkit-transform 0.2s;
+}
+
+.meal-photo img:hover{
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/*-----------*/
+/*CITIES*/
+/*-----------*/
+
+.section-cities{
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*-----------*/
+/*HOW IT WORKS*/
+/*-----------*/
+
+.section-steps{
+   background-color: white;
+    
+}
+
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+    
+}
+
+.app-screen{
+    width: 40%;
+    
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+    .works-step:last-of-type{
+    margin-bottom: 80px;    
+    }
+    
+
+.works-step div{
+    color: purple;
+    border: 2px solid purple;
+    display: inline-block;
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    
+}
+
+/*-----------*/
+/*forms*/
+/*-----------*/
+
+.box img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+/*-----------*/
+/*TESTIMONIALS*/
+/*-----------*/
+
+.section-testimonials{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/cus.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/cus.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+
+blockquote:before {
+    content:"\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    
+}
+
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*--------------------*/
+/*SIGN UP*/
+/*--------------------*/
+
+.section-plans{
+    background-color: rgba(0, 0, 0, 0.1);
+    
+}
+
+.plan-box{
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.plan-box div{
+    
+    padding: 15px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+
+.plan-box div:last-child{
+    text-align: center;
+}
+
+
+.plan-price{
+    background-color: rgba(0, 0, 0, 0.78);
+    border-radius: 20px;
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: aqua;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+/*--------------------*/
+/*FORM*/
+/*--------------------*/
+
+
+.contact-form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.58);
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{outline: none;}
+
+/*--------------------*/
+/*FOOTER*/
+/*--------------------*/
+
+footer {
+    background-color: black;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+    
+}
+
+.footer-nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: white;
+}
